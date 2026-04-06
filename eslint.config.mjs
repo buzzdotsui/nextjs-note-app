@@ -13,6 +13,11 @@ const eslintConfig = defineConfig([
     "build/**",
     "next-env.d.ts",
   ]),
+  {
+    rules: {
+      "react/react-in-jsx-scope": "off",
+    },
+  }
 ]);
 
 export default eslintConfig;
